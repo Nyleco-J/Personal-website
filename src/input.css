@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 82rem;
+}
+
+
+/* @layer base{
+    .container{
+        @apply p-[1.5rem] max-w-[140rem] mx-auto
+        max-width: 10rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+} */
+
+@layer components{
+    .toggle__menu span{
+        width: 2rem;
+        height: .2rem;
+        background-color: #FFBE42;
+        display: block;
+        border-radius: 5rem;
+        transition: .5s ease;
+    }
+    .toggle__menu span:nth-child(2){
+        margin: .2rem 0;
+    }
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg]  ease-out duration-[.5s];
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0;
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg]  ease-out duration-[.5s];
+    }
+    .header__nav ul{
+        @apply absolute bg-green-500 right-0 top-[6.4rem] w-0 p-0 overflow-hidden h-[100vh] z-[1] lg:static lg:w-full lg:h-auto lg:bg-transparent;
+    }
+    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
+        @apply lg:mx-[1rem];
+    }
+    .header__nav ul.open{
+        @apply w-[85%];
+    }
+    .header__nav ul{
+        @apply text-center py-[10rem] lg:py-[0];
+    }
+    .btn{
+        @apply inline-block py-[.5rem] px-[2rem];
+    }
+   
+   
+}
