@@ -56,6 +56,25 @@
     .btn{
         @apply inline-block py-[.5rem] px-[2rem];
     }
-   
+    .projects_slider img{
+        @apply h-[17rem] w-[40rem] lg:h-[50rem] lg:w-auto lg:object-cover lg:object-center;
+    }
+    .tns-outer button, [role="stop"] {
+        @apply hidden;
+    }
+    .proj-display{
+        @apply hidden;
+    }
+    .proj-display.active{
+        @apply block;
+    }
+   .html:hover .hover{
+         opacity: 1;
+         transition: .5s ease;
+   }
+   .html:hover .image{
+        opacity: 0;
+        transition: .5s ease;
+   }
    
 }
