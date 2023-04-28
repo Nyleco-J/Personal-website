@@ -68,13 +68,11 @@
     .proj-display.active{
         @apply block;
     }
-   .html:hover .hover{
-         opacity: 1;
-         transition: .5s ease;
-   }
-   .html:hover .image{
-        opacity: 0;
-        transition: .5s ease;
-   }
-   
+    .html:hover .hover{
+            @apply lg:opacity-[1] ;     
+    }
+    .html:hover .image{
+            @apply lg:opacity-[0] ;
+    }
+    
 }
