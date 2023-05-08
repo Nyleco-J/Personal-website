@@ -8,6 +8,9 @@
     padding: 1.5rem;
     max-width: 82rem;
 }
+html{
+    scroll-padding-top: 5rem;
+}
 
 
 /* @layer base{
@@ -42,7 +45,7 @@
         @apply translate-x-0 translate-y-[-3px] rotate-[-225deg]  ease-out duration-[.5s];
     }
     .header__nav ul{
-        @apply absolute bg-green-500 right-0 top-[6.4rem] w-0 p-0 overflow-hidden h-[100vh] z-[1] lg:static lg:w-full lg:h-auto lg:bg-transparent;
+        @apply absolute bg-black right-0 top-[6.4rem] w-0 p-0 overflow-hidden h-[100vh] z-[1] lg:static lg:w-full lg:h-auto lg:bg-transparent;
     }
     .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
         @apply lg:mx-[1rem];
@@ -57,7 +60,7 @@
         @apply inline-block py-[.5rem] px-[2rem];
     }
     .projects_slider img{
-        @apply h-[17rem] w-[40rem] lg:h-[50rem] lg:w-auto lg:object-cover lg:object-center;
+        @apply h-[17rem] w-[40rem] lg:h-[40rem] lg:w-auto lg:object-cover lg:object-center lg:m-auto;
     }
     .tns-outer button, [role="stop"] {
         @apply hidden;
@@ -68,11 +71,16 @@
     .proj-display.active{
         @apply block;
     }
-    .html:hover .hover{
+    .imageskills:hover .hover{
             @apply lg:opacity-[1] ;     
     }
-    .html:hover .image{
+    .imageskills:hover .image{
             @apply lg:opacity-[0] ;
     }
-    
+    .projects ul li.active{
+        @apply text-yellow;
+    }
+    .header .header__nav ul li a.active{
+        @apply text-yellow;
+    }
 }

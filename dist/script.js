@@ -23,17 +23,35 @@ function removeActiveContent(){
 }
 
 
-// const headerbg = document.querySelector(".background");
+
 const toggleMenu = document.querySelector(".toggle__menu");
 const headerBot = document.querySelector(".header__nav ul");
-const arjay = document.querySelector(".arjay");
+const closing = document.querySelector(".header__nav ul li a")
 toggleMenu.addEventListener("click", () => {
   toggleMenu.classList.toggle("open");
   headerBot.classList.toggle("open");
-//   headerbg.classList.toggle("open");
-    headerBot.style=("transition: .5s ease;");
-    arjay.classList.toggle("show");
+    headerBot.style=("transition: .5s ease");
 });
+
+const actclosing =document.querySelectorAll(".closed");
+actclosing.forEach((sara) => {
+  sara.addEventListener("click", () => {
+    removeActiveclose();
+    sara.classList.add("active");
+    headerBot.classList.remove("open");
+    toggleMenu.classList.remove("open");
+    headerBot.style=("transition: .5s ease");
+  })
+});
+function removeActiveclose(){
+  actclosing.forEach((sara) => {
+    sara.classList.remove("active");
+  })
+};
+
+
+
+
 
 const spotify = document.querySelectorAll(".footer__item h4")
 spotify.forEach((song) => {

@@ -11,19 +11,19 @@
 </head>
 <body>
     </div>
-    <header class="header bg-gray border-b-2 relative">
+    <header class="header bg-gray border-b-2 fixed w-full z-10">
         <div class="container">
             <div class="header__wrapper flex items-center justify-between z-[-1]">
                 <div class="branding">
                     <img src="./img/Logo Desktop.png" alt="" class="w-[5rem]">
                 </div>
                     <div class="header__nav">
-                        <ul class="lg:flex lg:items-center">
-                            <li class=""><a href="#active" class="text-yellow text-[2.5rem] lg:text-[1.5rem]">Home</a></li>
-                            <li class=""><a href="" class="text-yellow text-[2.5rem] lg:text-[1.5rem]">Services</a></li>
-                            <li class=""><a href="" class="text-yellow text-[2.5rem] lg:text-[1.5rem]">Skills</a></li>
-                            <li class=""><a href="" class="text-yellow text-[2.5rem] lg:text-[1.5rem]">Contact</a></li>
-                            <li class="" ><a href="" class="text-yellow text-[2.5rem] lg:text-[1.5rem]">Projects</a></li>
+                        <ul class="lg:flex lg:items-center z-10">
+                            <li class="" id="header-1"><a href="#home" class="closed active text-white text-[2.5rem] lg:text-[1.5rem]">Home</a></li>
+                            <li class="" id="header-2"><a href="#service" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Services</a></li>
+                            <li class="" id="header-3"><a href="#skills" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Skills</a></li>
+                            <li class="" id="header-4"><a href="#contact" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Contact</a></li>
+                            <li class="" id="header-5"><a href="#projects" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Projects</a></li>
                         </ul>
                     </div>
                     <div class="toggle__menu z-50 lg:hidden">
@@ -35,7 +35,7 @@
         </div>
     </header>
 
-    <section class="banner bg-gray h-[100vh]">
+    <section class="banner bg-gray h-[100vh] pt-[7rem] lg:p-[10rem]">
         <div class="container">
             <div class="banner__wrapper lg:flex lg:flex-row-reverse lg:justify-between">
                 <div class="banner__img flex items-center justify-center">
@@ -44,19 +44,19 @@
                 <div class="banner__text text-center my-[.5rem] lg:text-left lg:py-[5rem]">
                     <p class="text-white text-[2rem] my-[.3rem]lg:text-[10rem] lg:hidden">Hello!</p>
                     <h1 class="text-yellow font-bold text-[3.5rem] leading-[2.8rem] lg:leading-[2.5rem] pt-[.5rem] lg:text-[6rem] "><span class="text-white">I'm </span>NYLECO-J <span class="lg:hidden">ANURAN</span></h1>
-                    <p class="text-white pt-[.5rem] lg:pt-[2rem] lg:uppercase"><span class="text-yellow ">Web Developer</span> & <span class="text-yellow">Web Designer</span> </p>
+                    <p class="text-white pt-[.5rem] lg:pt-[2rem] lg:uppercase lg:font-bold lg:text-[1.5rem]"><span class="text-yellow ">Web Developer</span> & <span class="text-yellow">Web Designer</span> </p>
 
                     <h3 class="text-white text-[1rem]text-justify my-[3.5rem] max-w-[25rem] m-auto lg:mx-0 lg:text-[1.3rem] lg:py-[2rem] lg:max-w-[40rem]">My passion is to create a unique website. I always look forward to working with people and groups who share an interest for creating websites. </h3>
 
                     <div class="banner__button">
-                        <a href="" class="btn text-[1.2rem] text-black font-bold bg-white uppercase rounded-[2rem] hover:bg-yellow hover:text-white shadow-md hover:shadow-cyan-50">Hire Me</a>
+                        <a href="javascript:void(0)" class="btn text-[1.2rem] text-black font-bold bg-white uppercase rounded-[2rem] focus:bg-yellow focus:text-white lg:hover:bg-yellow lg:hover:text-white shadow-md lg:hover:shadow-cyan-50">Hire Me</a>
                     </div>
 
                     <div class="socmed flex items-center justify-center pt-[3rem] lg:justify-start ">
                         <ul class="flex gap-3 lg:pt-[1rem]">
-                            <li class="text-[1.5rem] text-white"><i class="fa-brands fa-linkedin-in"></i></li>
-                            <li class="text-[1.5rem] text-white"><i class="fa-solid fa-envelope"></i></li>
-                            <li class="text-[1.5rem] text-white"><i class="fa-brands fa-github"></i></li>
+                            <li class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-solid fa-envelope"></i></li>
+                            <li class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-github"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -64,18 +64,17 @@
         </div>
     </section>
     
-    <section class="projects bg-gray lg:bg-lgray">
+    <section class="projects bg-gray lg:bg-lgray" id="projects">
         <div class="container">
             <div class="projects__wrapper">
                 <div class="projects__content">
                     <div class="projects__title text-center">
-                        <h1 class="text-[3rem] text-yellow">Projects</h1>
+                        <h1 class="text-[3rem] text-yellow font-semibold">Projects</h1>
                     </div>
-                  
                     <ul class="flex gap-10 justify-center items-center" >
-                        <li id="prev-proj-1" class="text-white text-[1.2rem] font-semibold proj-link active"><a href="#">Tailwind</a></li>
-                        <li id="prev-proj-2" class="text-white text-[1.2rem] font-semibold proj-link"><a href="#" >SASS</a></li>
-                        <li id="prev-proj-3" class="text-white text-[1.2rem] font-semibold proj-link"><a href="#">Wordpress</a></li>
+                        <li id="prev-proj-1" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link active"><a href="javascript:void(0)">Tailwind</a></li>
+                        <li id="prev-proj-2" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link"><a href="javascript:void(0)" >SASS</a></li>
+                        <li id="prev-proj-3" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link"><a href="javascript:void(0)">Wordpress</a></li>
                     </ul>
                 </div>
                 
@@ -93,79 +92,73 @@
                         <img src="./img/thblog.png" alt="">
                     </div>
                     
-                     <a href="" class="text-[.8rem] font-semibold bg-white rounded-[2rem] inline-block py-[.3rem] px-[.8rem] hover:bg-yellow hover:text-white">Live Demo</a>
+                     <a href="javascript:void(0)" class="text-[.9rem] font-semibold bg-white rounded-[2rem] inline-block focus:bg-yellow py-[.3rem] px-[.8rem] lg:py-[.8rem] lg:px-[1.5rem] lg:text-[1.1rem] lg:hover:bg-yellow lg:hover:text-white">Live Demo</a>
                 </div>
             </div>
         </div>
     </section>
-    
 
-    <section class="skills lg:bg-gray">
+    <section class="skills relative z-0 bg-gray p-[2rem]" id="skills">
         <div class="container">
-            <div class="skills__wrapper"></div>
             <div class="skills_title flex items-center justify-center">
-                <h1 class="text-yellow text-[3rem]">Skills</h1>
+                <h1 class="text-yellow text-[3rem] font-semibold pb-[3rem]">Skills</h1>
             </div>
-            <div class="icons grid grid-cols-4 gap-[1rem] justify-center items-center">
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
+            <div class="skills__wrapper max-w-[60rem] m-auto">
+            
+            <div class="icons grid grid-cols-4 gap-[7rem] lg:gap-[1.8rem] justify-center items-center place-items-center">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class ="image w-[4.8rem] lg:w-[5.5rem]" src="./img/Html black.png" alt="">
                     <div class="hover text-center opacity-0 absolute">
                         <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
+                        <h4 class="text-white text-[1.2rem] font-semibold ">HTML</h4>
                     </div>
                 </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/tailwind-css-svgrepo-com 1.png" alt="">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/tailwind-css-svgrepo-com 1.png" alt="">
                     <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/tailwind-svgrepo-com 1.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">Tailwind</h4>
+                        <img class ="lg:w-[6rem]" src="./img/tailwind-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Tailwind</h4>
                     </div>
                 </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/css.png" alt="">
                     <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
+                        <img class ="" src="./img/css-3-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">CSS</h4>
                     </div>
                 </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/sass.png" alt="">
                     <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
+                        <img class ="lg:w-[6rem]" src="./img/sass-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">SASS</h4>
                     </div>
-                </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
-                    <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
-                    </div>
-                </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
-                    <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
-                    </div>
-                </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
-                    <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
-                    </div>
-                </div>
-                <div class="html bg-yellow hover:lg:bg-lgray w-[8rem] h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
-                    <img class =" image w-[5.5rem]" src="./img/Html black.png" alt="">
-                    <div class="hover text-center opacity-0 absolute">
-                        <img class ="" src="./img/html-5-color.png" alt="">
-                        <h4 class="text-white text-[1.5rem] font-semibold ">HTML</h4>
-                    </div>
-                </div>
-                
-              
+                </div> 
             </div>
+            <div class="proj-center grid grid-cols-3 gap-[1rem] justify-center items-center place-items-center pt-[2rem] max-w-[45rem] m-auto">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/wp.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/wordpress-color-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Wordpress</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/figma.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/figma-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Figma</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/js.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/js (1).png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Javascript</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -175,8 +168,8 @@
             <div class="footer__wrapper flex flex-col items-center text-white">
                 <h3 class="uppercase font-semibold">find with me</h3>
                 <ul class="flex gap-3">
-                    <li><i class="fa-brands fa-github"></i></li>
-                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="lg:text-[1.5rem] lg:hover:text-yellow"><i class="fa-brands fa-github"></i></li>
+                    <li class="lg:text-[1.5rem] lg:hover:text-yellow"><i class="fa-brands fa-linkedin-in"></i></li>
                 </ul>
                 <p>©Copyright. All right reserved.</p>
             </div>
