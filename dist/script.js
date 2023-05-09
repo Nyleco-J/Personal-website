@@ -51,8 +51,6 @@ function removeActiveclose(){
 
 
 
-
-
 const spotify = document.querySelectorAll(".footer__item h4")
 spotify.forEach((song) => {
     song.addEventListener("click", () => {
@@ -76,3 +74,26 @@ var slider = tns({
     autoplay: true,
     controls: false,
   });
+
+var toTopButton = document.getElementById("to-top-button");
+
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            toTopButton.classList.remove("hidden");
+        } else {
+            toTopButton.classList.add("hidden");
+        }
+    }
+
+    // When the user clicks on the button, smoothy scroll to the top of the document
+    function goToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth', });
+          removeActiveclose();
+        const home = document.getElementById('#home-link');
+        home.classList.add('active');
+
+
+        
+
+    }

@@ -10,6 +10,7 @@
 }
 html{
     scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
 }
 
 
@@ -60,7 +61,7 @@ html{
         @apply inline-block py-[.5rem] px-[2rem];
     }
     .projects_slider img{
-        @apply h-[17rem] w-[40rem] lg:h-[40rem] lg:w-auto lg:object-cover lg:object-center lg:m-auto;
+        @apply h-[17rem] w-[40rem] lg:h-[44rem] lg:w-auto lg:object-center lg:object-fill lg:m-auto;
     }
     .tns-outer button, [role="stop"] {
         @apply hidden;
@@ -82,5 +83,11 @@ html{
     }
     .header .header__nav ul li a.active{
         @apply text-yellow;
+    }
+    .services .services__content:hover{
+        @apply lg:h-[38rem] lg:w-[35rem] lg:ease-in-out duration-300
+    }
+    .services .fullcard{
+        @apply lg:flex lg:items-center lg:justify-center lg:gap-[1rem] lg:h-[40rem] lg:w-full
     }
 }
