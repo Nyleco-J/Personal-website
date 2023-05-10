@@ -89,11 +89,7 @@ var toTopButton = document.getElementById("to-top-button");
     // When the user clicks on the button, smoothy scroll to the top of the document
     function goToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth', });
-          removeActiveclose();
+        removeActiveclose();
         const home = document.getElementById('#home-link');
         home.classList.add('active');
-
-
-        
-
     }

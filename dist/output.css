@@ -635,6 +635,11 @@ video {
   }
 }
 
+.header__nav ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 190 66 / var(--tw-text-opacity));
+}
+
 .btn {
   display: inline-block;
   padding-top: .5rem;
@@ -692,14 +697,11 @@ video {
   color: rgb(255 190 66 / var(--tw-text-opacity));
 }
 
-.services .services__content:hover {
-  transition-duration: 300ms;
-}
-
 @media (min-width: 1024px) {
   .services .services__content:hover {
     height: 38rem;
     width: 35rem;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -711,6 +713,11 @@ video {
     justify-content: center;
     gap: 1rem;
   }
+}
+
+.contact .socmed ul li i:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 190 66 / var(--tw-text-opacity));
 }
 
 .sr-only {
@@ -1069,10 +1076,6 @@ video {
   font-size: 1.5rem;
 }
 
-.text-\[1\.6rem\] {
-  font-size: 1.6rem;
-}
-
 .text-\[1rem\] {
   font-size: 1rem;
 }
@@ -1274,6 +1277,10 @@ html{
     max-width: 40rem;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
@@ -1304,10 +1311,6 @@ html{
 
   .lg\:gap-\[1\.8rem\] {
     gap: 1.8rem;
-  }
-
-  .lg\:gap-\[2rem\] {
-    gap: 2rem;
   }
 
   .lg\:gap-\[3rem\] {
@@ -1437,25 +1440,6 @@ html{
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
-  }
-
-  .lg\:hover\:mx-20:hover {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .lg\:hover\:h-\[30rem\]:hover {
-    height: 30rem;
-  }
-
-  .lg\:hover\:w-\[25rem\]:hover {
-    width: 25rem;
-  }
-
-  .lg\:hover\:scale-125:hover {
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .hover\:lg\:bg-lgray:hover {

@@ -57,6 +57,9 @@ html{
     .header__nav ul{
         @apply text-center py-[10rem] lg:py-[0];
     }
+    .header__nav ul li a{
+        @apply hover:text-yellow;
+    }
     .btn{
         @apply inline-block py-[.5rem] px-[2rem];
     }
@@ -85,9 +88,12 @@ html{
         @apply text-yellow;
     }
     .services .services__content:hover{
-        @apply lg:h-[38rem] lg:w-[35rem] lg:ease-in-out duration-300
+        @apply lg:h-[38rem] lg:w-[35rem] lg:ease-in-out lg:duration-300
     }
     .services .fullcard{
         @apply lg:flex lg:items-center lg:justify-center lg:gap-[1rem] lg:h-[40rem] lg:w-full
+    }
+    .contact .socmed ul li i{
+        @apply hover:text-yellow;
     }
 }
